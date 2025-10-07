@@ -30,7 +30,7 @@ from absl import logging as absl_logging
 
 FLAGS = flags.FLAGS
 flags.DEFINE_string("model", "together.ai:Qwen/Qwen3-Next-80B-A3B-Thinking", "Name of model to evaluate")
-flags.DEFINE_string("eval_model_id", "gpt-5", "Name of judge model (OpenAI assumed)")
+flags.DEFINE_string("eval_model_id", "openai:gpt-5", "Name of judge model (OpenAI assumed)")
 flags.DEFINE_string("conversation_file", "conversations/san_diego_trip.yaml", "path to conversation file")
 flags.DEFINE_string("output_dir", "data", "Location into which output data will be saved")
 flags.DEFINE_integer("max_turns", 5, "Maximum number of turns this conversation is allowed to have")
@@ -172,13 +172,13 @@ async def get_html(url):
     return content
 
 
-def get_agent_response(messages, profile, task, tabs):
+def get_agent_response(messages, profile, task, tabs, eval_provider, eval_id):
     m = [
         {"role": "system",
          "content": p.AGENT_HARNESS_PROMPT.format(profile=profile, task=task, tabs=tabs, messages=messages)}
     ]
 
-    response = get_response(m, 'openai', 'gpt-5', tools=[], tool_choice=None)
+    response = get_response(m, eval_provider, eval_id, tools=[], tool_choice=None)
 
     resp = response.choices[0].message.content
 
@@ -199,7 +199,9 @@ async def invoke_tool_call(tc, tool_registry):
     return tool_registry.get(func, "default")(**args)
 
 
-async def do_chat(profile, task_description, tabs, system_prompt, first_user_prompt, tool_registry, provider, model_id, tools, max_turns, max_tool_calls):
+async def do_chat(profile, task_description, tabs, system_prompt, 
+                  first_user_prompt, tool_registry, provider, model_id,
+                  tools, max_turns, max_tool_calls, eval_provider, eval_id):
     messages = [
         {
             "content": system_prompt,
@@ -278,6 +280,7 @@ async def do_chat(profile, task_description, tabs, system_prompt, first_user_pro
 async def _main(_):
     print("Calling _main")
     provider, model_id = FLAGS.model.split(":")
+    eval_provider, eval_id = FLAGS.eval_model_id.split(":")
     model_id_simple = model_id.split("/")[-1]
     print(" | ".join([provider, model_id, model_id_simple]))
 
@@ -320,7 +323,9 @@ async def _main(_):
         model_id=model_id,
         tools=tools,
         max_turns=FLAGS.max_turns,
-        max_tool_calls=FLAGS.max_tool_calls
+        max_tool_calls=FLAGS.max_tool_calls,
+        eval_provider=eval_provider,
+        eval_id=eval_id
         )
     
     os.makedirs(FLAGS.output_dir, exist_ok=True)
