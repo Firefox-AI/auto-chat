@@ -1,0 +1,45 @@
+- function:
+    description: Returns the text content of a web page given the url.
+    name: get_page_contents
+    parameters:
+      properties:
+        url:
+          description: URL of website to read
+          type: string
+      required:
+      - url
+      type: object
+  type: function
+- function:
+    description: Returns the most relevant history items related to search term with
+      each containing url, title, visited time and a description of the page if available.
+    name: search_history
+    parameters:
+      properties:
+        search_term:
+          description: The term to use to search for relevant history.
+          type: string
+      required:
+      - search_term
+      type: object
+  type: function
+- function:
+    description: Retrieve the user's saved preferences (location, dietary, hobbies,
+      interests, etc.) which could help in personalizing the response. If a query
+      is provided, it will be used to filter for relevant preferences.
+    name: get_preferences
+    parameters:
+      properties:
+        query:
+          description: The user query to filter for relevant preferences if provided.
+          type: string
+      type: object
+  type: function
+- function:
+    description: Returns a list of opened tabs with each including url, title and
+      a flag indicating if the tab is currently active to the user.
+    name: get_tabs
+    parameters:
+      properties: {}
+      type: object
+  type: function

@@ -1,0 +1,37 @@
+open_tabs:
+  - url: "https://www.bhphotovideo.com/c/product/1705674-REG/sony_alpha_a6700_mirrorless_camera.html
+    title: "Sony a6700 Mirrorless Camera"
+
+  - url: "https://www.canon.com/cameras/eos-r7/"
+    title: "Canon EOS R7 Product Page" 
+  
+  - url: "https://www.dpreview.com/reviews/nikon-z6-ii-review"
+    title: "Nikon Z6 II Review | DPReview"
+  
+  - url: "https://www.tamron.com/lenses/a063/"
+    title: "Tamron 150-500mm F/5-6.7 Di III VC VXD"
+  
+  - url: "https://www.audubon.org/news/guide-photographing-birds-flight"
+    title: "Guide to Photographing Birds in Flight"
+
+  - url: "https://www.reddit.com/r/WildlifePhotography/comments/ab1234/r7_vs_a6700_for_birds/""
+    title: "R7 vs a6700 for birds? — Reddit Thread"
+
+  - url: "https://www.seattletrails.org/best-birding-spots"
+    title: "Best Birding Spots Near Seattle"
+    
+user_preferences:
+  "location": "Seattle"
+  "budget": "<= $2,000"
+  "experience_level": "intermediate"
+  "interests":
+    - "birding"
+    - "hiking"
+    - "wildlife photography"
+    - "gear research"
+
+user_profile: "You’re an intermediate hobbyist photographer based in Seattle who hikes on weekends to photograph birds. You’re weight-sensitive on long hikes and want fast autofocus and good reach without blowing a $2,000 budget."
+
+task_description: "Choose the best camera + lens combo for bird photography on a $2,000 budget."
+
+first_user_prompt: "Which camera from my tabs is best for bird photography on my budget, and what lens should I pair it with?"

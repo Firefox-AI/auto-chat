@@ -1,0 +1,37 @@
+open_tabs:
+  - url: "https://milwaukeemotorcycleclothing.com/products/event-leather-el5411-mens-black-classic-side-lace-motorcycle-jacket"
+    title: "Mens Classic Leather Motorcycle Jacket"
+
+  - url: "https://straighttohellapparel.com/product/vegan-barracuda/"
+    title: "Vegan Barracuda Motorcycle Jacket"
+
+  - url: "https://quantum-journal.org/papers/q-2025-08-10-999/"
+    title: "Quantum Entanglement and Noise"
+    text: "Research paper exploring fault-tolerant quantum computation."
+
+  - url: "https://www.chicago-bucket-list.com"
+    title: "The ultimate Chicago bucket list"
+
+  - url: "https://buddyguy.com/menu/"
+    title: "Buddy Guys Legends -- Menu"
+
+  - url: "https://www.feastingathome.com/15-minute-pad-thai/"
+    title: "Easy to Make Pad Thai Recipe | Feasting at Home"
+
+user_preferences:
+  "location": "Chicago"
+  "dietary": "vegetarian/vegan"
+  "age_group": "40-50"
+  "family": "married"
+  "interests":
+    - "fine wine"
+    - "whiskey/scotch/bourbon"
+    - "luxury travel"
+    - "New York Yankees"
+    - "international travel"
+
+user_profile: "You are a married, middle-aged man who lives in Chicago. You love the Yankees and enjoy the finer things in life: aged whiskey, scotch, fine wine, etc. You are also a vegetarian who leans vegan (you are concerned about animal rights). You do not have children and you use your considerable desposable income to engage in frequent international travel."
+
+task_description: "You are trying to decide on the best leather jacket to buy"
+
+first_user_prompt: "Can you help me compare these two leather jackets?"
