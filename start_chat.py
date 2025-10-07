@@ -250,7 +250,7 @@ async def do_chat(profile, task_description, tabs, system_prompt,
         else:
             # resp = input("Response: ")
             tool_count = 0
-            resp = get_agent_response(messages, profile=profile, task=task_description, tabs=tabs)
+            resp = get_agent_response(messages, profile=profile, task=task_description, tabs=tabs, eval_provider=eval_provider, eval_id=eval_id)
             ctr += 1
             print("AGENT RESPONSE: ", resp)
             print("\n")
