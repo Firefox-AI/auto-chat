@@ -3,6 +3,10 @@ Repository for creating agent-agent conversations.
 
 There are two ways to run this repository. The first way, is to have the handler agent (GPT-5) come up with the scenario. This will include generating a user profile, a set of user interests and a goal that the handler agent is trying to accomplish. 
 
+The default behavior is for the agent to continue to the conversation until its goal has been accomplished. We also provide a flag `--max_turns` to control how long the conversation can continue (in the case that the model is unable to accomplish the agent's goal). 
+
+Another useful flag is `max_tool_calls` which controls the number of consecutive tool calls that can be made without the agent responding. The default is 5, but that might be too low for some scenarios that require looking at the user's open tabs and reading the pages.
+
 ### Example usage -- generated scenario
 ``` bash
 uv run python start_chat.py --model together.ai:Qwen/Qwen3-235B-A22B-Instruct-2507-tput\
