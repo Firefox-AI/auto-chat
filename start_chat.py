@@ -5,11 +5,15 @@ import subprocess
 import yaml
 import json
 
+import numpy as np
+
 ## model providers
 import openai
 from openai import OpenAI
 import together
 from together import Together
+
+import uuid
 
 import requests
 import tempfile
@@ -195,10 +199,18 @@ async def get_html(url):
 
 
 def get_convo_data_with_model():
+    theme = np.random.choice(p.THEMES)
+    user_type = np.random.choice(p.USER_TYPES)
+    interest = np.random.choice(p.USER_INTERESTS)
+
+    seed = uuid.uuid4().hex[:6]
+
+    print(f"Theme: {theme}\nUser Type: {user_type}\nInterest: {interest}")
+
     messages = [
         {
             "role": "system",
-            "content": p.CREATE_EXAMPLE
+            "content": p.CREATE_EXAMPLE.format(seed=seed, theme=theme, user_type=user_type, key_interest=interest)
         } 
     ]
 
@@ -206,7 +218,6 @@ def get_convo_data_with_model():
                 model="gpt-5",
                 messages=messages,
                 response_format=ConversationData,
-                temperature=0.7
     )
     return json.loads(response.choices[0].message.content)
 

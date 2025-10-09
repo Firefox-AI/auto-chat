@@ -47,7 +47,10 @@ Use the provided user profile plus the available browser tools to assist the use
 """
 
 CREATE_EXAMPLE = """
-I am building an evaluation dataset for a browser assistant. Can you create a user profile and scenerio similar to the ones below? 
+Random seed: {seed}
+
+I am building an evaluation dataset for a browser assistant. Can you create a user profile and scenerio similar to the ones below?
+Your scenerio should center around {theme}, the user should be of type '{user_type}', and the user's interests should include: '{key_interest}'
 
 ### EXAMPLE 1 ###
 open_tabs:
@@ -128,3 +131,73 @@ first_user_prompt: "I'd really like to learn how to ski, but I have no idea wher
 
 conversation_name: "learning_to_ski"
 """
+
+THEMES = [
+  "outdoors",
+  "extreme sports",
+  "travel",
+  "food/cooking",
+  "shopping",
+  "entertainment",
+  "sports",
+  "education",
+  "tech",
+  "movies",
+  "television",
+  "gardening"
+]
+
+USER_TYPES = [
+  "married/no children",
+  "single",
+  "college student",
+  "graduate student",
+  "young professional",
+  "married with children",
+  "retired",
+  "adult children",
+  "married / teenaged children",
+  "has grandchildren",
+  "budget concious",
+  "animal lover"
+]
+
+USER_INTERESTS = [
+  "cameras",
+  "baseball",
+  "basketball",
+  "surfing",
+  "running",
+  "fine wine",
+  "whiskey",
+  "pop music",
+  "90s music",
+  "old movies",
+  "movies",
+  "television",
+  "pop culture",
+  "celebrities",
+  "music",
+  "heavy metal music",
+  "haunted houses",
+  "ghosts",
+  "travel photography",
+  "home automation", 
+  "vegan cooking", 
+  "cryptocurrency investing",
+  "indie video games", 
+  "sustainable fashion",
+  "wildlife conservation",
+  "mindfulness meditation",
+  "space exploration",
+  "DIY woodworking",
+  "urban gardening", 
+  "fantasy novels", 
+  "fitness tracking", 
+  "artificial intelligence", 
+  "vintage cars", 
+  "language learning", 
+  "podcasting",
+  "film editing",
+  "astronomy"
+]
