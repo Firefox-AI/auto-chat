@@ -205,7 +205,8 @@ def get_convo_data_with_model():
     response = client_oa.chat.completions.parse(
                 model="gpt-5",
                 messages=messages,
-                response_format=ConversationData
+                response_format=ConversationData,
+                temperature=0.7
     )
     return json.loads(response.choices[0].message.content)
 
