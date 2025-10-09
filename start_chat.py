@@ -31,7 +31,7 @@ from absl import logging as absl_logging
 FLAGS = flags.FLAGS
 flags.DEFINE_string("model", "together.ai:Qwen/Qwen3-Next-80B-A3B-Thinking", "Name of model to evaluate")
 flags.DEFINE_string("eval_model_id", "openai:gpt-5", "Name of judge model (OpenAI assumed)")
-flags.DEFINE_string("conversation_file", "conversations/san_diego_trip.yaml", "path to conversation file")
+flags.DEFINE_string("conversation_file", "", "path to conversation file if using custom setup. leave blank to have GPT-5 create one on the fly")
 flags.DEFINE_string("output_dir", "data", "Location into which output data will be saved")
 flags.DEFINE_integer("max_turns", 5, "Maximum number of turns this conversation is allowed to have")
 flags.DEFINE_integer("max_tool_calls", 5, "Maximum number of tool calls an agent is allowed to make before getting cut off")
@@ -323,10 +323,12 @@ async def _main(_):
     print(" | ".join([provider, model_id, model_id_simple]))
 
     tools = get_tools()
-    # conversation_data = get_convo_data(FLAGS.conversation_file)
-    # convo_name, _ = os.path.splitext(os.path.basename(FLAGS.conversation_file))
-    conversation_data = get_convo_data_with_model()
-    convo_name = conversation_data['conversation_name'].replace(" ", "_")
+    if FLAGS.conversation_file:
+        conversation_data = get_convo_data(FLAGS.conversation_file)
+        convo_name, _ = os.path.splitext(os.path.basename(FLAGS.conversation_file))
+    else:
+        conversation_data = get_convo_data_with_model()
+        convo_name = conversation_data['conversation_name'].replace(" ", "_")
 
     TABS = json.dumps(conversation_data['open_tabs'], indent=3)
     PREFS = json.dumps(conversation_data['user_preferences'], indent=3)
