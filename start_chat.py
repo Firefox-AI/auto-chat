@@ -33,7 +33,7 @@ from absl import logging as absl_logging
 # absl_logging.set_verbosity(absl_logging.ERROR)
 
 FLAGS = flags.FLAGS
-flags.DEFINE_string("model", "together.ai:Qwen/Qwen3-Next-80B-A3B-Thinking", "Name of model to evaluate")
+flags.DEFINE_string("model", "together.ai:Qwen/Qwen3-235B-A22B-Instruct-2507-tput", "Name of model to evaluate")
 flags.DEFINE_string("eval_model_id", "openai:gpt-5", "Name of judge model (OpenAI assumed)")
 flags.DEFINE_string("conversation_file", "", "path to conversation file if using custom setup. leave blank to have GPT-5 create one on the fly")
 flags.DEFINE_string("output_dir", "data", "Location into which output data will be saved")
