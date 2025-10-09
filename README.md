@@ -3,7 +3,7 @@ Repository for creating agent-agent conversations.
 
 There are two ways to run this repository. The first way, is to have the handler agent (GPT-5) come up with the scenario. This will include generating a user profile, a set of user interests and a goal that the handler agent is trying to accomplish. 
 
-### Example usage -- generated scnario
+### Example usage -- generated scenario
 ``` bash
 uv run python start_chat.py --model together.ai:Qwen/Qwen3-235B-A22B-Instruct-2507-tput\
                             --eval_model_id openai:gpt-5\
