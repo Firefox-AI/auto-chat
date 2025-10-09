@@ -43,6 +43,28 @@ client_groq = OpenAI(
     base_url="https://api.groq.com/openai/v1",
 )
 
+class TabInfo(BaseModel):
+    url: str
+    title: str
+    description: str | None
+
+
+class UserPreferences(BaseModel):
+    location: str | None
+    income_level: str | None
+    dietary: str | None
+    age_group: str | None
+    family: str | None
+    interests: List[str]
+
+class ConversationData(BaseModel):
+    open_tabs: List[TabInfo]
+    user_preferences: UserPreferences
+    user_profile: str
+    task_description: str
+    first_user_prompt: str
+    conversation_name: str
+
 
 ## tools
 def open_tab(url):
@@ -172,6 +194,22 @@ async def get_html(url):
     return content
 
 
+def get_convo_data_with_model():
+    messages = [
+        {
+            "role": "system",
+            "content": p.CREATE_EXAMPLE
+        } 
+    ]
+
+    response = client_oa.chat.completions.parse(
+                model="gpt-5",
+                messages=messages,
+                response_format=ConversationData
+    )
+    return json.loads(response.choices[0].message.content)
+
+
 def get_agent_response(messages, profile, task, tabs, eval_provider, eval_id):
     m = [
         {"role": "system",
@@ -285,7 +323,10 @@ async def _main(_):
     print(" | ".join([provider, model_id, model_id_simple]))
 
     tools = get_tools()
-    conversation_data = get_convo_data(FLAGS.conversation_file)
+    # conversation_data = get_convo_data(FLAGS.conversation_file)
+    # convo_name, _ = os.path.splitext(os.path.basename(FLAGS.conversation_file))
+    conversation_data = get_convo_data_with_model()
+    convo_name = conversation_data['conversation_name'].replace(" ", "_")
 
     TABS = json.dumps(conversation_data['open_tabs'], indent=3)
     PREFS = json.dumps(conversation_data['user_preferences'], indent=3)
@@ -329,7 +370,6 @@ async def _main(_):
         )
     
     os.makedirs(FLAGS.output_dir, exist_ok=True)
-    convo_name, _ = os.path.splitext(os.path.basename(FLAGS.conversation_file))
 
     with open(os.path.join(FLAGS.output_dir, f"{convo_name}.json"), 'w') as f:
         json.dump(messages, f)
