@@ -7,6 +7,24 @@ The default behavior is for the agent to continue to the conversation until its 
 
 Another useful flag is `max_tool_calls` which controls the number of consecutive tool calls that can be made without the agent responding. The default is 5, but that might be too low for some scenarios that require looking at the user's open tabs and reading the pages.
 
+### Setup ###
+This package is mostly python based, but to replicate the Firefox browser, we use `readability.js` for webpage parsing. In addition, we use `playwright` as a headless browser to navigation. To setup your environment, run the following commands:
+
+1. install node dependencies (`readability.js`)
+``` bash
+npm install
+```
+
+2. install python dependencies
+``` bash
+uv sync
+```
+
+3. install playwrite browsers
+``` bash
+uv run playwright install
+```
+
 ### Example usage -- generated scenario
 ``` bash
 uv run python start_chat.py --model together.ai:Qwen/Qwen3-235B-A22B-Instruct-2507-tput\
