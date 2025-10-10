@@ -6,6 +6,7 @@ import yaml
 import json
 
 import numpy as np
+import time
 
 ## model providers
 import openai
@@ -35,6 +36,7 @@ from absl import logging as absl_logging
 FLAGS = flags.FLAGS
 flags.DEFINE_string("model", "together.ai:Qwen/Qwen3-235B-A22B-Instruct-2507-tput", "Name of model to evaluate")
 flags.DEFINE_string("eval_model_id", "openai:gpt-5", "Name of judge model (OpenAI assumed)")
+flags.DEFINE_string("conversations_dir", "conversations", "Directory where generated conversations will be saved.")
 flags.DEFINE_string("conversation_file", "", "path to conversation file if using custom setup. leave blank to have GPT-5 create one on the fly")
 flags.DEFINE_string("output_dir", "data", "Location into which output data will be saved")
 flags.DEFINE_integer("max_turns", 5, "Maximum number of turns this conversation is allowed to have")
@@ -86,7 +88,9 @@ async def get_page_contents(url, title=""):
 
         return d['textContent']
     except Exception as e:
+        print(f"Page Error: could not retrienve page contents. (details: {e})")
         return f"Page Error: could not retrienve page contents. (details: {e})"
+
 
 
 def default(*args, **kwargs):
@@ -335,12 +339,20 @@ async def _main(_):
     print(" | ".join([provider, model_id, model_id_simple]))
 
     tools = get_tools()
+
+    os.makedirs(FLAGS.conversations_dir, exist_ok=True)
+
     if FLAGS.conversation_file:
         conversation_data = get_convo_data(FLAGS.conversation_file)
         convo_name, _ = os.path.splitext(os.path.basename(FLAGS.conversation_file))
     else:
         conversation_data = get_convo_data_with_model()
         convo_name = conversation_data['conversation_name'].replace(" ", "_")
+        conversation_save_file = os.path.join(FLAGS.conversations_dir, f"{convo_name}.json")
+        if os.path.exists(conversation_save_file):
+            conversation_save_file = os.path.join(FLAGS.conversations_dir, f"{convo_name}_{time.time()}.json")
+        with open(conversation_save_file, 'w') as f:
+            json.dump(conversation_data, f, indent=4)
 
     TABS = json.dumps(conversation_data['open_tabs'], indent=3)
     PREFS = json.dumps(conversation_data['user_preferences'], indent=3)
@@ -384,7 +396,7 @@ async def _main(_):
         )
     
     os.makedirs(FLAGS.output_dir, exist_ok=True)
-
+    
     with open(os.path.join(FLAGS.output_dir, f"{convo_name}.json"), 'w') as f:
         json.dump(messages, f)
     with open(os.path.join(FLAGS.output_dir, f"{convo_name}_tokens.json"), 'w') as f:
