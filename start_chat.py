@@ -405,7 +405,7 @@ async def _main(_):
     with open(os.path.join(FLAGS.output_dir, f"{convo_name}.json"), 'w') as f:
         json.dump(messages, f)
     with open(os.path.join(FLAGS.output_dir, f"{convo_name}_tokens.json"), 'w') as f:
-        json.dump(messages, f)
+        json.dump(tokens, f)
 
 
 def main(_):
