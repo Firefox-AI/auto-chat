@@ -41,7 +41,7 @@ flags.DEFINE_string("conversations_dir", "conversations", "Directory where gener
 flags.DEFINE_string("conversation_file", "", "path to conversation file if using custom setup. leave blank to have GPT-5 create one on the fly")
 flags.DEFINE_string("output_dir", "data", "Location into which output data will be saved")
 flags.DEFINE_integer("max_turns", 5, "Maximum number of turns this conversation is allowed to have")
-flags.DEFINE_integer("max_tool_calls", 5, "Maximum number of tool calls an agent is allowed to make before getting cut off")
+flags.DEFINE_integer("max_tool_calls", 10, "Maximum number of tool calls an agent is allowed to make before getting cut off")
 
 client_oa = OpenAI()    # auth is at os.environ["OPENAI_API_KEY"]
 client_tg = Together()  # auth is at os.environ["TOGETHER_API_KEY"]
