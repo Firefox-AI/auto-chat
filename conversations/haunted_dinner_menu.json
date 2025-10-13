@@ -1,0 +1,59 @@
+{
+    "open_tabs": [
+        {
+            "url": "https://en.wikipedia.org/wiki/Ghost_pepper",
+            "title": "Ghost pepper - Wikipedia",
+            "description": "Background, heat level (Scoville units), and handling considerations for Bhut Jolokia."
+        },
+        {
+            "url": "https://www.chilipeppermadness.com/chili-pepper-recipes/hot-sauces/ghost-pepper-hot-sauce/",
+            "title": "Ghost Pepper Hot Sauce \u2014 Chili Pepper Madness",
+            "description": "Step-by-step recipe for a ghost pepper hot sauce; notes on safety and dialing heat."
+        },
+        {
+            "url": "https://www.seriouseats.com/ultra-gooey-stovetop-macaroni-and-cheese-recipe",
+            "title": "Ultra-Gooey Stovetop Mac and Cheese \u2014 Serious Eats",
+            "description": "Fast, budget-friendly mac and cheese base that can be spiced up with chilies."
+        },
+        {
+            "url": "https://www.budgetbytes.com/roasted-cauliflower-tacos-with-lime-crema/",
+            "title": "Roasted Cauliflower Tacos with Lime Crema \u2014 Budget Bytes",
+            "description": "Affordable vegetarian main; easy to scale for groups and add optional heat."
+        },
+        {
+            "url": "https://thewoksoflife.com/smashed-asian-cucumber-salad/",
+            "title": "Smashed Cucumber Salad \u2014 The Woks of Life",
+            "description": "Crisp no-cook side; refreshing counterpoint to spicy dishes."
+        },
+        {
+            "url": "https://www.thekitchn.com/how-to-work-with-hot-peppers-without-burning-your-skin-223486",
+            "title": "How To Work With Hot Peppers Without Burning Your Skin \u2014 The Kitchn",
+            "description": "Practical safety tips for handling superhot chiles like ghost pepper."
+        },
+        {
+            "url": "https://www.aldi.us/en/weekly-specials/our-weekly-ads/",
+            "title": "ALDI Weekly Ad",
+            "description": "Current deals for budget shopping on produce, dairy, and pantry staples."
+        }
+    ],
+    "user_preferences": {
+        "location": "Providence, RI",
+        "income_level": "student budget",
+        "dietary": "lacto-ovo vegetarian",
+        "age_group": "20-30",
+        "family": "single; lives with a roommate",
+        "interests": [
+            "ghosts",
+            "folklore",
+            "spicy foods",
+            "food science",
+            "budget cooking",
+            "horror movies",
+            "thrift shopping"
+        ]
+    },
+    "user_profile": "You are a graduate student in folklore at Brown University living in Providence. You're organizing a small, ghost-themed dinner for classmates after seminar. You cook in a tiny apartment kitchen with just a stovetop and a toaster oven, and you\u2019re on a tight student budget. You\u2019re a lacto-ovo vegetarian who loves experimenting with heat (including ghost peppers) but you want options that won\u2019t overwhelm spice-sensitive friends. You\u2019re into ghosts, haunted folklore, and playful, thematic presentation.",
+    "task_description": "Help the user design a ghost-themed, vegetarian, budget-friendly dinner menu for 6, including at least one optional ghost pepper component; provide a complete shopping list, per-item cost targets, and a 2-hour prep timeline for a small kitchen (stovetop + toaster oven). Include spice-level alternatives and safety tips for handling superhot chilies.",
+    "first_user_prompt": "I\u2019m hosting a ghost-themed dinner for six classmates on a $50 budget. I\u2019ve got a stovetop and a toaster oven only. Can you plan a vegetarian menu with one optional ghost pepper item, make a shopping list with rough prices, and give me a 2-hour prep schedule? Please include milder substitutions for anyone who can\u2019t handle the heat.",
+    "conversation_name": "haunted_dinner_menu"
+}
