@@ -1,0 +1,58 @@
+{
+    "open_tabs": [
+        {
+            "url": "https://www.nike.com/t/kd17-basketball-shoes",
+            "title": "Nike KD17 Basketball Shoes",
+            "description": "Official product page with specs, colorways, and price."
+        },
+        {
+            "url": "https://www.adidas.com/us/harden-vol-8-shoes",
+            "title": "Adidas Harden Vol. 8 Shoes",
+            "description": "Official product page with materials, cushioning details, and pricing."
+        },
+        {
+            "url": "https://weartesters.com/nike-kd-17-performance-review/",
+            "title": "Nike KD 17 Performance Review - WearTesters",
+            "description": "In-depth traction, cushioning, fit, and durability testing."
+        },
+        {
+            "url": "https://weartesters.com/adidas-harden-vol-8-performance-review/",
+            "title": "Adidas Harden Vol. 8 Performance Review - WearTesters",
+            "description": "Performance breakdown focused on grip, comfort, and support."
+        },
+        {
+            "url": "https://runrepeat.com/compare/nike-kd-17-vs-adidas-harden-vol-8",
+            "title": "Compare: Nike KD 17 vs Adidas Harden Vol. 8 | RunRepeat",
+            "description": "Side-by-side ratings, expert/user reviews, and weight/stack data."
+        },
+        {
+            "url": "https://www.footlocker.com/how-to/size-guide/shoes",
+            "title": "Shoe Size Guide - Foot Locker",
+            "description": "Sizing tips including width considerations and conversion."
+        },
+        {
+            "url": "https://www.dickssportinggoods.com/s/basketball-shoes",
+            "title": "Basketball Shoes | DICK'S Sporting Goods",
+            "description": "Local availability and pickup options in Phoenix area."
+        }
+    ],
+    "user_preferences": {
+        "location": "Phoenix, AZ",
+        "income_level": "mid-range",
+        "dietary": null,
+        "age_group": "25-35",
+        "family": "single",
+        "interests": [
+            "basketball",
+            "pickup games",
+            "sneakers",
+            "Phoenix Suns",
+            "strength training",
+            "sports tech"
+        ]
+    },
+    "user_profile": "You are a single, late-20s software engineer living in Phoenix. You play indoor pickup basketball 2-3 times a week as a quick guard and follow the Phoenix Suns closely. You have narrow feet and occasional knee soreness after longer runs, so you prioritize traction on dusty courts and cushioning/impact protection without sacrificing court feel. Your budget for shoes is around $180, and you prefer options with easy returns or local try-on availability.",
+    "task_description": "Decide between the Nike KD 17 and the Adidas Harden Vol. 8 for indoor pickup play, factoring in fit for narrow feet, traction on slightly dusty courts, cushioning for mild knee soreness, durability, and return/try-on options within a $180 budget.",
+    "first_user_prompt": "I'm torn between the KD 17 and the Harden Vol. 8 for indoor pickup. I have narrow feet and some knee soreness. Which should I get?",
+    "conversation_name": "basketball_shoes"
+}

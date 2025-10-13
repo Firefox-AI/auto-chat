@@ -1,0 +1,68 @@
+{
+    "open_tabs": [
+        {
+            "url": "https://laparks.org/venice/skatepark",
+            "title": "Venice Beach Skatepark \u2014 Hours & Rules",
+            "description": "City of Los Angeles page with location, hours, and safety rules for the Venice Beach Skatepark."
+        },
+        {
+            "url": "https://shop.ccs.com/collections/complete-skateboards",
+            "title": "CCS Complete Skateboards for Beginners",
+            "description": "Beginner-friendly complete skateboards ranging from about $120\u2013$180; size and setup guidance included."
+        },
+        {
+            "url": "https://touchstoneclimbing.com/la-boulders/",
+            "title": "LA Boulders \u2014 Student Memberships",
+            "description": "Membership rates, day passes, student discounts, and first-time climber info for LA Boulders in DTLA."
+        },
+        {
+            "url": "https://www.rei.com/learn/expert-advice/bouldering-basics",
+            "title": "Bouldering Basics: Gear and Safety | REI Co-op",
+            "description": "Intro guide covering essential gear (shoes, chalk, crash pad), movement basics, and safety tips."
+        },
+        {
+            "url": "https://xgames.com/schedule",
+            "title": "X Games 2025 \u2014 Event Schedule",
+            "description": "Schedule for upcoming X Games events, athlete lineups, and broadcast details."
+        },
+        {
+            "url": "https://www.britannica.com/biography/Tony-Hawk",
+            "title": "Tony Hawk | Biography & Career Highlights",
+            "description": "Background on the iconic skateboarder, major achievements, and cultural impact."
+        },
+        {
+            "url": "https://www.nationalgeographic.com/adventure/article/alex-honnold-free-solo-safety-interview",
+            "title": "Alex Honnold on Risk and Safety in Climbing | NatGeo Interview",
+            "description": "Interview with Alex Honnold about managing risk, training, and safety in climbing."
+        },
+        {
+            "url": "https://recreation.ucla.edu/outdoor-adventures",
+            "title": "UCLA Outdoor Adventures \u2014 Trips & Rentals",
+            "description": "Campus program offering climbing trips, intro clinics, and discounted gear rentals for students."
+        },
+        {
+            "url": "https://skateschool.la/classes",
+            "title": "Skate School LA \u2014 Beginner Classes",
+            "description": "Private and group skateboarding lessons; gear provided; package pricing and scheduling."
+        }
+    ],
+    "user_preferences": {
+        "location": "Los Angeles (UCLA)",
+        "income_level": "student budget",
+        "dietary": "none",
+        "age_group": "18-24",
+        "family": "single",
+        "interests": [
+            "extreme sports",
+            "skateboarding",
+            "bouldering/climbing",
+            "celebrities",
+            "social media/content creation",
+            "live events (X Games, competitions)"
+        ]
+    },
+    "user_profile": "You are a 20-year-old UCLA sophomore living in Westwood on a student budget. You\u2019re obsessed with extreme sports culture and follow celebrity athletes and influencers (Tony Hawk, Alex Honnold, Nyjah Huston) on social media. You want an adrenaline-filled hobby you can start this semester, something affordable, safe to learn, and photogenic for content. You rely on public transit/bike, prefer local options near campus, and want to attend high-profile events like X Games.",
+    "task_description": "Help the user choose between skateboarding and bouldering as their first extreme sport this semester. Compare startup costs (max $300), recurring costs, safety/risk, learning curve, and access near UCLA. Provide a step-by-step 30-day starter plan and recommend beginner gear and local classes/passes.",
+    "first_user_prompt": "I\u2019m torn between starting skateboarding or bouldering this semester. Can you compare cost, safety, and beginner steps near UCLA? My budget is $300 max.",
+    "conversation_name": "skate_vs_bouldering"
+}

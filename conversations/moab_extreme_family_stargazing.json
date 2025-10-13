@@ -1,0 +1,71 @@
+{
+    "open_tabs": [
+        {
+            "url": "https://www.mtbproject.com/trail/7002439/the-whole-enchilada",
+            "title": "The Whole Enchilada Trail - Moab",
+            "description": "Iconic advanced mountain bike descent; shuttle required and seasonal openings noted."
+        },
+        {
+            "url": "https://moabcliffsandcanyons.com/adventures/via-ferrata/",
+            "title": "Moab Via Ferrata Adventure - Cliffs & Canyons",
+            "description": "Guided via ferrata suitable for families; age/weight requirements and difficulty info."
+        },
+        {
+            "url": "https://www.moabadventurecenter.com/rafting",
+            "title": "Moab Colorado River Rafting - Moab Adventure Center",
+            "description": "Daily rafting trips including family-friendly Fisher Towers and more intense Westwater Canyon."
+        },
+        {
+            "url": "https://www.nps.gov/arch/planyourvisit/stargazing.htm",
+            "title": "Stargazing at Arches National Park (NPS)",
+            "description": "Best stargazing spots, night-sky program info, and light etiquette inside the park."
+        },
+        {
+            "url": "https://www.amsmeteors.org/meteor-showers/meteor-shower-calendar/",
+            "title": "Meteor Shower Calendar - American Meteor Society",
+            "description": "Peak dates, radiant info, and moon phases for upcoming meteor showers."
+        },
+        {
+            "url": "https://www.worldnomads.com/travel-insurance/adventure-sports",
+            "title": "Adventure Sports Travel Insurance - World Nomads",
+            "description": "Coverage details for mountain biking, canyoneering, rafting; plan tiers and exclusions."
+        },
+        {
+            "url": "https://utah.com/hiking/moab-canyoneering",
+            "title": "Moab Canyoneering Guide - Utah.com",
+            "description": "Overview of canyoneering routes, permits, difficulty ratings, and guiding options."
+        },
+        {
+            "url": "https://www.rei.com/c/men-full-face-bike-helmets",
+            "title": "Full-Face Mountain Bike Helmets | REI Co-op",
+            "description": "ASTM-certified downhill helmets; fit guides and customer reviews."
+        },
+        {
+            "url": "https://www.darksky.org/our-work/conservation/idsp/parks/arches-national-park/",
+            "title": "Arches National Park \u2014 International Dark Sky Park",
+            "description": "Certification details, sky quality, and recommendations for stargazing conditions."
+        }
+    ],
+    "user_preferences": {
+        "location": "Denver, CO",
+        "income_level": "upper-middle",
+        "dietary": "no restrictions",
+        "age_group": "30-40",
+        "family": "married with children",
+        "interests": [
+            "astronomy",
+            "extreme sports",
+            "downhill mountain biking",
+            "canyoneering",
+            "bouldering",
+            "astrophotography",
+            "national parks",
+            "family travel",
+            "stargazing"
+        ]
+    },
+    "user_profile": "You are a 38-year-old married parent of two (ages 7 and 10) living in Denver. You\u2019re an adrenaline-seeker who loves downhill mountain biking, canyoneering, and bouldering, but you\u2019re also a devoted amateur astronomer who plans trips around dark-sky opportunities and meteor showers. You balance high-intensity pursuits with family-friendly activities for your spouse and kids, and you\u2019re safety-conscious and gear-savvy with a comfortable, upper-middle income for travel and guided adventures.",
+    "task_description": "Plan a 3-day Moab itinerary that balances extreme sports (advanced MTB and a canyoneering route) with kid-friendly adventures and one dedicated stargazing night. Identify suitable routes, guiding services, safety gear, permits, and travel insurance considerations.",
+    "first_user_prompt": "Can you help me plan a 3-day Moab trip that gives me one serious MTB ride and a beginner-friendly canyoneering day, keeps things fun for my wife and kids, and includes a stargazing night? Please use the tabs I have open.",
+    "conversation_name": "moab_extreme_family_stargazing"
+}

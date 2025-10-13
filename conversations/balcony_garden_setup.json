@@ -1,0 +1,75 @@
+{
+    "open_tabs": [
+        {
+            "url": "https://www.apartmenttherapy.com/how-to-start-a-balcony-garden-370282",
+            "title": "How to Start a Balcony Garden",
+            "description": "Beginner tips for setting up a productive container garden in small outdoor spaces."
+        },
+        {
+            "url": "https://planthardiness.ars.usda.gov/",
+            "title": "USDA Plant Hardiness Zone Map",
+            "description": "Interactive map to find local plant hardiness zones; Austin is generally Zone 8b\u20139a."
+        },
+        {
+            "url": "https://www.epicgardening.com/self-watering-containers/",
+            "title": "Self-Watering Containers: A Complete Guide",
+            "description": "How sub-irrigated planters work and the best options for vegetables and herbs."
+        },
+        {
+            "url": "https://www.gardeners.com/buy/self-watering-planters/",
+            "title": "Self-Watering Planters | Gardener's Supply",
+            "description": "A range of balcony-friendly sub-irrigated planters and window boxes."
+        },
+        {
+            "url": "https://agrilifeextension.tamu.edu/library/gardening/container-gardening/",
+            "title": "Texas A&M AgriLife Extension \u2014 Container Gardening",
+            "description": "Best practices for pot sizes, soil mixes, and watering in Texas\u2019 climate."
+        },
+        {
+            "url": "https://www.raindrip.com/products/raindrip-container-and-hanging-baskets-kit",
+            "title": "Raindrip Container and Hanging Baskets Kit",
+            "description": "All-in-one drip irrigation kit designed for potted plants and balconies."
+        },
+        {
+            "url": "https://www.gonursery.com/",
+            "title": "The Great Outdoors Garden Center \u2014 Austin, TX",
+            "description": "Local nursery with herbs, veggie starts, containers, and garden supplies."
+        },
+        {
+            "url": "https://www.suncalc.org/",
+            "title": "SunCalc",
+            "description": "Tool to estimate sun path and hours of sunlight hitting a specific balcony."
+        },
+        {
+            "url": "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M",
+            "title": "Today's Top Hits | Spotify",
+            "description": "Popular pop music playlist to soundtrack gardening sessions."
+        },
+        {
+            "url": "https://www.epicgardening.com/best-potting-soil-for-containers/",
+            "title": "Best Potting Soil for Containers",
+            "description": "Guide to lightweight, well-draining mixes ideal for container veggies and herbs."
+        }
+    ],
+    "user_preferences": {
+        "location": "Austin, TX",
+        "income_level": "mid",
+        "dietary": "no dietary restrictions",
+        "age_group": "25-35",
+        "family": "single",
+        "interests": [
+            "urban gardening",
+            "pop music",
+            "healthy cooking",
+            "concerts and festivals",
+            "sustainable living",
+            "running",
+            "coffee",
+            "tech gadgets"
+        ]
+    },
+    "user_profile": "You are a young professional living in a rented apartment in Austin with a small south-facing balcony. Your schedule is busy during the week, so you want a low-maintenance garden that survives Texas heat and occasional water restrictions. You\u2019re into pop music, often hitting local shows and festivals, and you\u2019d love fresh herbs and a few easy veggies for quick weeknight meals. You\u2019re eco-conscious, tech-savvy, and prefer renter-friendly solutions like self-watering planters or simple drip kits.",
+    "task_description": "Plan a low-maintenance balcony herb and vegetable garden suited to Austin (Zone 8b), including plant recommendations, container sizes, soil mix, a simple watering solution, and a starter shopping list.",
+    "first_user_prompt": "I\u2019m a total beginner and I want a low-maintenance balcony garden for my Austin apartment. What should I plant and what gear do I need?",
+    "conversation_name": "balcony_garden_setup"
+}

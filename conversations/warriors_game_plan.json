@@ -1,0 +1,57 @@
+{
+    "open_tabs": [
+        {
+            "url": "https://www.nba.com/warriors/schedule",
+            "title": "Golden State Warriors Schedule and Tickets",
+            "description": "Official team schedule with links to buy tickets; filterable by home games."
+        },
+        {
+            "url": "https://www.ticketmaster.com/golden-state-warriors-tickets/artist/805995",
+            "title": "Golden State Warriors Tickets | Ticketmaster",
+            "description": "Primary ticket marketplace listings for upcoming home games."
+        },
+        {
+            "url": "https://seatgeek.com/venues/chase-center/seating-chart",
+            "title": "Chase Center Seating Chart & Seat Views | SeatGeek",
+            "description": "Interactive seating map with seat views and pricing heatmaps."
+        },
+        {
+            "url": "https://www.chasecenter.com/guest-experience/food-and-beverage",
+            "title": "Chase Center Food & Beverage Guide",
+            "description": "Concessions directory; includes vegetarian and vegan options by section."
+        },
+        {
+            "url": "https://www.rover.com/san-francisco--ca--dog-boarding/",
+            "title": "Top Dog Boarding in San Francisco | Rover.com",
+            "description": "Local overnight dog boarding options with reviews, availability, and rates."
+        },
+        {
+            "url": "https://www.sfspca.org/volunteer/",
+            "title": "San Francisco SPCA Volunteer Opportunities",
+            "description": "Ways to get involved with animal welfare; reflects user\u2019s ongoing interests."
+        },
+        {
+            "url": "https://www.sfmta.com/getting-around/transit/routes-stops/warriors-games",
+            "title": "Getting to Warriors Games | SFMTA",
+            "description": "Transit and parking guidance for Chase Center on game days."
+        }
+    ],
+    "user_preferences": {
+        "location": "San Francisco",
+        "income_level": "mid",
+        "dietary": "vegan",
+        "age_group": "25-35",
+        "family": "single (with a rescue dog)",
+        "interests": [
+            "basketball",
+            "NBA",
+            "animal welfare",
+            "hiking",
+            "plant-based cooking"
+        ]
+    },
+    "user_profile": "You are a single, mid-20s-to-30s animal lover living in San Francisco with a rescue dog. You are vegan and volunteer with the local SPCA. You\u2019re a big basketball fan (especially the Warriors) and enjoy spending weekends hiking and trying new plant-based spots around the Bay. You\u2019re budget-conscious but willing to pay for good seat value and convenience.",
+    "task_description": "Help the user choose a Warriors home game to attend next month, compare seating options for best value and view, verify vegan concession choices at Chase Center, and arrange reliable overnight dog boarding near the arena.",
+    "first_user_prompt": "I want to catch a Warriors home game next month. Can you help me pick the best matchup and find good-value seats with a solid view? I\u2019m vegan and need to sort out overnight dog boarding too.",
+    "conversation_name": "warriors_game_plan"
+}

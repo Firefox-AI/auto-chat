@@ -1,4 +1,5 @@
 import pandas as pd
+from datetime import datetime
 from datasets import load_dataset
 import os
 import subprocess
@@ -86,9 +87,11 @@ async def get_page_contents(url, title=""):
         html = await get_html(url)
         d = extract_readable_article(html=html)
 
+        print("FOUND: ", d['textContent'])
+
         return d['textContent']
     except Exception as e:
-        print(f"Page Error: could not retrienve page contents. (details: {e})")
+        print(f"Page Error: could not retrienve page contents. (details: {e} | url: {url})")
         return f"Page Error: could not retrienve page contents. (details: {e})"
 
 
@@ -187,8 +190,9 @@ def extract_readable_article(html: str = "", url: str = "https://example.com", t
     return seen_result
 
 
-def make_system_prompt(tabs, prefs):
-    return p.CHAT_AGENT_SYSTEM_PROMPT_P1 + tabs + p.CHAT_AGENT_SYSTEM_PROMPT_P2 + prefs + p.CHAT_AGENT_SYSTEM_PROMPT_P3
+def make_system_prompt(current_tab, prefs, city):
+    today = datetime.strftime(datetime.now(), "%Y-%m-%d")
+    return p.CHAT_AGENT_SYSTEM_PROMPT.format(insights = prefs, today = today, city = city, current_tab = current_tab)
 
 
 async def get_html(url):
@@ -355,9 +359,10 @@ async def _main(_):
             json.dump(conversation_data, f, indent=4)
 
     TABS = json.dumps(conversation_data['open_tabs'], indent=3)
+    current_tab = json.dumps(conversation_data['open_tabs'][0], indent=3)
     PREFS = json.dumps(conversation_data['user_preferences'], indent=3)
 
-    system_prompt = make_system_prompt(TABS, PREFS)
+    system_prompt = make_system_prompt(current_tab, PREFS, conversation_data.get("user_location", "<unknown>"))
     print(system_prompt)
 
     def get_tabs():

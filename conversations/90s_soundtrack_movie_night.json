@@ -1,0 +1,53 @@
+{
+    "open_tabs": [
+        {
+            "url": "https://www.justwatch.com/us/movie/trainspotting",
+            "title": "Where to Watch Trainspotting (1996) - JustWatch",
+            "description": "Streaming and rental availability in the US, with pricing and services."
+        },
+        {
+            "url": "https://www.justwatch.com/us/movie/william-shakespeares-romeo-juliet",
+            "title": "Where to Watch Romeo + Juliet (1996) - JustWatch",
+            "description": "Streaming availability for Baz Luhrmann\u2019s Romeo + Juliet."
+        },
+        {
+            "url": "https://www.rottentomatoes.com/m/singles",
+            "title": "Singles (1992) - Rotten Tomatoes",
+            "description": "Critic and audience scores, reviews, and synopsis for Singles."
+        },
+        {
+            "url": "https://www.siff.net/cinema",
+            "title": "SIFF Cinema Showtimes",
+            "description": "Seattle screenings and special events, including retro 90s nights."
+        },
+        {
+            "url": "https://pitchfork.com/features/lists-and-guides/9940-the-50-best-movie-soundtracks-of-the-1990s/",
+            "title": "The 50 Best Movie Soundtracks of the 1990s - Pitchfork",
+            "description": "Editorial list and commentary on standout 90s film soundtracks."
+        },
+        {
+            "url": "https://open.spotify.com/playlist/37i9dQZF1DX3YMp9nFf9CS",
+            "title": "90s Movie Soundtracks - Spotify Playlist",
+            "description": "Curated mix of iconic tracks from 90s films."
+        }
+    ],
+    "user_preferences": {
+        "location": "Seattle",
+        "income_level": "mid",
+        "dietary": "pescatarian",
+        "age_group": "30-40",
+        "family": "single",
+        "interests": [
+            "90s music",
+            "indie films",
+            "vinyl collecting",
+            "live music",
+            "coffee culture",
+            "bike commuting"
+        ]
+    },
+    "user_profile": "You are a single, early-30s film and music enthusiast living in Seattle (Capitol Hill). You collect vinyl and are obsessed with 90s music\u2014grunge, Britpop, trip-hop\u2014and you love movies with memorable soundtracks. You split your time between streaming at home and catching repertory screenings at SIFF. You\u2019re pescatarian, budget-conscious but willing to splurge for special events, and you often build your movie nights around the soundtrack vibe.",
+    "task_description": "Help the user choose a movie for tonight with an iconic 90s soundtrack, compare the options\u2019 musical vibes, and find the easiest way to watch (streaming vs. local screening in Seattle).",
+    "first_user_prompt": "I\u2019m torn between Singles, Romeo + Juliet (1996), and Trainspotting for tonight. Which has the best overall soundtrack vibe, and what\u2019s the easiest way to watch each in Seattle right now?",
+    "conversation_name": "90s_soundtrack_movie_night"
+}

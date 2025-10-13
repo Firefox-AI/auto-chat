@@ -1,0 +1,60 @@
+{
+    "open_tabs": [
+        {
+            "url": "https://www.commonsensemedia.org/lists/animal-movies",
+            "title": "Best Animal Movies for Families | Common Sense Media",
+            "description": "Curated list of animal-themed films with detailed content notes and age recommendations."
+        },
+        {
+            "url": "https://humanehollywood.org/",
+            "title": "Humane Hollywood \u2014 No Animals Were Harmed",
+            "description": "American Humane\u2019s guidelines and ratings for animal safety in film and TV productions."
+        },
+        {
+            "url": "https://www.rottentomatoes.com/m/babe",
+            "title": "Babe (1995) - Rotten Tomatoes",
+            "description": "Critics and audience scores, reviews, and where to watch info for the classic animal-friendly film."
+        },
+        {
+            "url": "https://www.justwatch.com/us",
+            "title": "JustWatch \u2014 Streaming Guide",
+            "description": "Search where animal-themed movies like Babe, My Octopus Teacher, and The Secret Life of Pets are streaming."
+        },
+        {
+            "url": "https://en.wikipedia.org/wiki/My_Octopus_Teacher",
+            "title": "My Octopus Teacher - Wikipedia",
+            "description": "Overview of the Oscar-winning nature documentary about a filmmaker bonding with a wild octopus."
+        },
+        {
+            "url": "https://www.familyhandyman.com/project/how-to-build-a-backyard-movie-screen/",
+            "title": "How to Build a Backyard Movie Screen | Family Handyman",
+            "description": "Step-by-step DIY woodworking plans for a simple, portable outdoor movie screen frame."
+        },
+        {
+            "url": "https://www.carlofet.com/projector-screen-materials",
+            "title": "Carl\u2019s Place \u2014 Projector Screen Materials",
+            "description": "Blackout cloth and screen fabrics, including outdoor-friendly options sized for DIY frames."
+        }
+    ],
+    "user_preferences": {
+        "location": "Portland, OR",
+        "income_level": "moderate",
+        "dietary": "vegetarian",
+        "age_group": "30-40",
+        "family": "partnered; two rescue pets (dog and cat)",
+        "interests": [
+            "DIY woodworking",
+            "wildlife conservation",
+            "documentary films",
+            "indie cinema",
+            "backyard entertaining",
+            "home theater gear",
+            "plant-based cooking",
+            "hiking"
+        ]
+    },
+    "user_profile": "You are a 34-year-old animal lover in Portland, Oregon, living with your partner, a rescue dog, and a rescue cat. You care deeply about animal welfare and prefer movies that avoid depictions of real animal harm and, when possible, are monitored by American Humane. You\u2019re vegetarian, enjoy indie and documentary films, and like hosting cozy backyard screenings. You\u2019re handy with DIY woodworking projects and plan to build a simple wooden outdoor movie screen frame to upgrade your home movie setup.",
+    "task_description": "Plan an animal-friendly backyard movie night: curate a lineup of cruelty-free films, find where they\u2019re streaming, and choose a straightforward DIY wooden screen frame design with a materials list.",
+    "first_user_prompt": "I\u2019m planning a backyard, animal-friendly movie night. Can you suggest a lineup that feels good for animal lovers and also advise me on a simple wooden screen frame I can build?",
+    "conversation_name": "backyard_movie_night"
+}

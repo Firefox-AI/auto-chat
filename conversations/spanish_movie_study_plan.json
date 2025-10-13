@@ -1,0 +1,60 @@
+{
+    "open_tabs": [
+        {
+            "url": "https://www.rottentomatoes.com/top/bestofrt/top_100_spanish_language_movies/",
+            "title": "Top 100 Spanish-Language Movies - Rotten Tomatoes",
+            "description": "Critics' top-rated Spanish-language films with Tomatometer scores."
+        },
+        {
+            "url": "https://www.languagereactor.com/",
+            "title": "Language Reactor \u2014 Learn languages with Netflix & YouTube",
+            "description": "Tool for dual subtitles, transcript, and vocabulary while watching films."
+        },
+        {
+            "url": "https://guides.nyu.edu/kanopy",
+            "title": "Kanopy Streaming Video \u2014 NYU Libraries",
+            "description": "How to access Kanopy through NYU, including Spanish-language cinema collections."
+        },
+        {
+            "url": "https://help.netflix.com/en/node/372",
+            "title": "How to change the subtitle and language settings \u2014 Netflix Help Center",
+            "description": "Instructions for enabling Spanish audio and subtitles."
+        },
+        {
+            "url": "https://www.imdb.com/title/tt0457430/",
+            "title": "Pan's Labyrinth (2006) \u2014 IMDb",
+            "description": "Spanish-language dark fantasy film by Guillermo del Toro."
+        },
+        {
+            "url": "https://www.justwatch.com/us/movies?languages=es",
+            "title": "JustWatch \u2014 Spanish-language Movies in the US",
+            "description": "Streaming availability and filters for Spanish-language films."
+        },
+        {
+            "url": "https://www.fluentu.com/blog/spanish/spanish-movies/",
+            "title": "Best Spanish Movies for Learners \u2014 FluentU",
+            "description": "Recommendations of learner-friendly Spanish films with notes on difficulty."
+        }
+    ],
+    "user_preferences": {
+        "location": "New York, NY",
+        "income_level": "student budget",
+        "dietary": "vegetarian",
+        "age_group": "20-30",
+        "family": "single",
+        "interests": [
+            "language learning",
+            "world cinema",
+            "independent film",
+            "Latin American culture",
+            "applied linguistics",
+            "film festivals",
+            "movie soundtracks",
+            "streaming on a budget"
+        ]
+    },
+    "user_profile": "You are a graduate student in applied linguistics at NYU living in New York City. You\u2019re on a student budget, vegetarian, and carve out weekly time for movies. You\u2019re learning Spanish at an upper\u2011intermediate level and want to use films to improve listening comprehension, colloquial vocabulary, and familiarity with different regional accents. You prefer world and indie cinema, rely on Kanopy, Netflix, and library resources, and like using tools such as Language Reactor and subtitles to support your study.",
+    "task_description": "Help the user build an 8\u2011week Spanish-language movie watchlist and study routine, including where to stream each film and subtitle strategies for language learning.",
+    "first_user_prompt": "I\u2019m putting together a Spanish-language movie watchlist to level up my Spanish. Can you suggest 6\u20138 films that are good for an intermediate learner, tell me where I can stream them (Kanopy/Netflix/etc.), and recommend how to handle subtitles for each?",
+    "conversation_name": "spanish_movie_study_plan"
+}

@@ -1,0 +1,68 @@
+{
+    "open_tabs": [
+        {
+            "url": "https://www.justwatch.com/us",
+            "title": "JustWatch \u2014 Streaming Guide (US)",
+            "description": "Search where movies are streaming across Netflix, Prime Video, Disney+, and more."
+        },
+        {
+            "url": "https://editorial.rottentomatoes.com/guide/best-sci-fi-movies-of-all-time/",
+            "title": "Best Sci-Fi Movies of All Time | Rotten Tomatoes",
+            "description": "Critics\u2019 list of top-rated sci-fi films with Tomatometer scores."
+        },
+        {
+            "url": "https://www.rottentomatoes.com/m/spider_man_into_the_spider_verse",
+            "title": "Spider-Man: Into the Spider-Verse (2018) | Rotten Tomatoes",
+            "description": "Film page with scores, synopsis, and audience reviews."
+        },
+        {
+            "url": "https://www.imdb.com/title/tt4633694/parentalguide/",
+            "title": "Parental Guide: Spider-Man: Into the Spider-Verse | IMDb",
+            "description": "Content advisory details for parents (violence, language, etc.)."
+        },
+        {
+            "url": "https://www.commonsensemedia.org/lists/best-teen-movies",
+            "title": "Best Teen Movies | Common Sense Media",
+            "description": "Age ratings and content notes for critic-recommended teen films."
+        },
+        {
+            "url": "https://letterboxd.com/films/popular/this/week/",
+            "title": "Popular Films This Week \u2022 Letterboxd",
+            "description": "Trending movies and community reviews."
+        },
+        {
+            "url": "https://drafthouse.com/austin",
+            "title": "Alamo Drafthouse Austin \u2014 Showtimes",
+            "description": "Current theatrical showtimes and special screenings in Austin."
+        },
+        {
+            "url": "https://www.justwatch.com/us/movies/family",
+            "title": "Family Movies \u2014 JustWatch (US)",
+            "description": "Filter family-friendly movies by streaming service."
+        },
+        {
+            "url": "https://www.seriouseats.com/the-best-stovetop-popcorn-recipe",
+            "title": "The Best Stovetop Popcorn | Serious Eats",
+            "description": "Quick recipe for movie-night popcorn with tips for perfect crunch."
+        }
+    ],
+    "user_preferences": {
+        "location": "Austin, TX",
+        "income_level": "middle",
+        "dietary": "vegetarian-friendly",
+        "age_group": "40-50",
+        "family": "married / teenaged children",
+        "interests": [
+            "movies",
+            "home theater",
+            "board games",
+            "live music",
+            "Tex-Mex cooking",
+            "hiking"
+        ]
+    },
+    "user_profile": "You are a married parent in your late 40s living in Austin, TX, with two teenaged children (13 and 16). Your family bonds over movies\u2014parents lean toward sci\u2011fi, clever comedies, and well-reviewed indies, while the kids like superhero films, anime, and feel\u2011good adventures. You try to keep things PG-13 or below, avoiding heavy gore or explicit content. You prefer streaming to keep costs down but will splurge on an Alamo Drafthouse outing for special releases. You host Friday family movie nights with themed snacks and like to check reviews and parental guides before deciding.",
+    "task_description": "Help the user plan a family movie night: recommend a mix of one recent release and one classic that will appeal to both parents and teens (13 and 16), confirm where each title is available to stream or showtimes in Austin, and note any key content considerations.",
+    "first_user_prompt": "We\u2019re planning a movie night with our 13-year-old and 16-year-old this weekend. Could you suggest a newer release and a classic we\u2019ll all enjoy and tell me where to stream them in the US? Please flag anything that might be too intense.",
+    "conversation_name": "family_movie_night"
+}

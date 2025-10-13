@@ -1,0 +1,73 @@
+{
+    "open_tabs": [
+        {
+            "url": "https://www.dpreview.com/reviews/buying-guide-best-cameras-for-sports-and-action",
+            "title": "Best cameras for sports and action",
+            "description": "Buying guide comparing autofocus, burst rates, buffer depth, and video features for sports."
+        },
+        {
+            "url": "https://www.bhphotovideo.com/c/product/1699386-REG/canon_eos_r7_mirrorless_camera.html",
+            "title": "Canon EOS R7 Mirrorless Camera",
+            "description": "Product page with specs including 30 fps e-shutter, Dual Pixel AF II, and 4K60 video."
+        },
+        {
+            "url": "https://www.bhphotovideo.com/c/product/1780184-REG/sony_ilce6700_b_alpha_a6700_mirrorless_camera.html",
+            "title": "Sony a6700 Mirrorless Camera",
+            "description": "Product page highlighting AI subject recognition AF, 4K60 10-bit video, and compact body."
+        },
+        {
+            "url": "https://gopro.com/en/us/news/gopro-hero12-black",
+            "title": "GoPro HERO12 Black",
+            "description": "Overview of features: 5.3K60, HyperSmooth, horizon lock, and easy mounting."
+        },
+        {
+            "url": "https://www.blackmagicdesign.com/products/davinciresolve/training",
+            "title": "DaVinci Resolve Training",
+            "description": "Official free training books and video courses for editing and color in Resolve."
+        },
+        {
+            "url": "https://usapickleball.org/tournaments/find-a-tournament/",
+            "title": "Find a Pickleball Tournament",
+            "description": "USA Pickleball searchable tournament calendar and event details."
+        },
+        {
+            "url": "https://www.scottsdaleaz.gov/parks/pickleball",
+            "title": "Scottsdale Parks \u2014 Pickleball",
+            "description": "Local court locations, league info, and schedules in Scottsdale, AZ."
+        },
+        {
+            "url": "https://rode.com/en/microphones/wireless/wireless-pro",
+            "title": "R\u00d8DE Wireless PRO",
+            "description": "Compact dual-channel wireless microphone system with 32-bit float recording."
+        },
+        {
+            "url": "https://www.bhphotovideo.com/explora/video/tips-and-solutions/how-to-film-sports",
+            "title": "How to Film Sports: Tips",
+            "description": "Guide to frame rates, shutter speed, angles, and practical field techniques."
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=3icw7nTW0tE",
+            "title": "DaVinci Resolve Sports Highlights Editing Tutorial",
+            "description": "Step-by-step tutorial for cutting sports highlight reels in Resolve."
+        }
+    ],
+    "user_preferences": {
+        "location": "Scottsdale, AZ",
+        "income_level": "comfortable fixed income",
+        "dietary": "low-sodium, Mediterranean-leaning",
+        "age_group": "65-75",
+        "family": "married; two adult children and three grandchildren",
+        "interests": [
+            "pickleball",
+            "golf",
+            "film editing",
+            "sports documentaries",
+            "community volunteering",
+            "YouTube content creation"
+        ]
+    },
+    "user_profile": "You are a retired civil engineer living in Scottsdale, AZ. You play in and help organize your community\u2019s senior pickleball league and recently picked up film editing as a hobby. You\u2019re comfortable with the basics of DaVinci Resolve and want to create clean, fun highlight reels for your league to show at the clubhouse and share online. You prefer lightweight, simple gear because you often shoot solo. You\u2019re choosing between the Sony a6700, Canon R7, or using a GoPro, and your budget for camera plus a basic mic is under $2,000.",
+    "task_description": "Help the user choose the best camera setup for filming a senior pickleball finals match (Sony a6700 vs Canon R7 vs GoPro) and outline a simple, step-by-step DaVinci Resolve workflow for producing a 5\u20137 minute highlight reel, including capture settings, audio, shot list, and delivery.",
+    "first_user_prompt": "I\u2019m filming our senior pickleball league finals next month. Can you help me decide between the a6700, R7, or just a GoPro, and map out a simple DaVinci Resolve workflow for a 5\u20137 minute highlight reel?",
+    "conversation_name": "pickleball_highlight_video"
+}
