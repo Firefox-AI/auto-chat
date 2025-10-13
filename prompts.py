@@ -176,7 +176,7 @@ THEMES = [
   "extreme sports",
   "travel",
   "food/cooking",
-  "shopping",
+  "research",
   "entertainment",
   "sports",
   "education",
