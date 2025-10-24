@@ -45,6 +45,10 @@ flags.DEFINE_integer("max_tool_calls", 10, "Maximum number of tool calls an agen
 
 client_oa = OpenAI()    # auth is at os.environ["OPENAI_API_KEY"]
 client_tg = Together()  # auth is at os.environ["TOGETHER_API_KEY"]
+client_litellm = OpenAI(
+    api_key=os.environ['LITELLM_API_KEY'],
+    base_url="https://stage.llm-proxy.nonprod.dataservices.mozgcp.net"
+)
 client_groq = OpenAI(
     api_key=os.environ['GROQ_API_KEY'],
     base_url="https://api.groq.com/openai/v1",
@@ -115,6 +119,13 @@ def get_convo_data(convo_file):
 def get_response(messages, provider, model_id, tools, tool_choice="auto"):
 
     match provider:
+        case "litellm":
+            response = client_litellm.chat.completions.create(
+                model=model_id,
+                messages=messages,
+                tools=tools,
+                tool_choice=tool_choice,
+            )
         case "together.ai":
             response = client_tg.chat.completions.create(
                 model=model_id,
