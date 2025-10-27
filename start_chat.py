@@ -111,8 +111,12 @@ def get_tools():
 
 
 def get_convo_data(convo_file):
-    with open(convo_file, "r") as f:
-        convo_data = yaml.safe_load(f)
+    if convo_file.endswith("yaml") or convo_file.endswith("yml"):
+        with open(convo_file, "r") as f:
+            convo_data = yaml.safe_load(f)
+    elif convo_file.endswith("json"):
+        with open(convo_file, "r") as f:
+            convo_data = json.load(f)
     return convo_data
 
 
